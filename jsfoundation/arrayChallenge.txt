@@ -1,0 +1,48 @@
+function filterNumbers(arr) {
+    return arr.filter(function (a) {
+        return typeof a === "number"
+    })
+}
+
+function reverseArray(arr) {
+  return arr.reverse();
+}
+
+function findMax(arr) {
+    let maxNumber = arr[0];
+    
+    for (const a of arr) {
+    if(maxNumber < a )
+        maxNumber = a;
+    }
+  return maxNumber;
+}
+
+function removeDuplicates(arr) {
+    let unique = [];
+    
+    for (let i=0; i<arr.length; i++)
+    {
+        let isDupicate = false
+
+        let idx = arr[i];
+        for(let j=0; j<arr.length; j++)
+        {
+            if(idx == arr[j] && i != j){
+                isDupicate = true;
+                break;
+            }
+        }
+        
+        if (!isDupicate || !unique.includes(arr[i])) {
+            unique.push(arr[i]);
+        }
+    }
+
+      return unique;
+    // return arr.filter(a => !arr.includes(a) || !unique.includes(a))
+}
+
+function flattenArray(arr) {
+  return arr.flat(2);
+}
