@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      /* * {
+        outline: 1px solid rgb(103, 51, 151);
+      } */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      h2 {
+        color: #333;
+      }
+      .container {
+        background-color: #fff;
+        border: 2px solid #333;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      .flex-container {
+        display: flex;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+      .square {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        /* margin: 5px; */
+        gap: 5px;
+      }
+
+      .pastel-1 {
+        background-color: red;
+      }
+      .pastel-2 {
+        background-color: blue;
+      }
+      .pastel-3 {
+        background-color: green;
+      }
+      .pastel-4 {
+        background-color: yellow;
+      }
+      .pastel-5 {
+        background-color: brown;
+      }
+      .pastel-6 {
+        background-color: rgb(165, 42, 136);
+      }
+      .pastel-7 {
+        background-color: rgb(42, 136, 165);
+      }
+      .pastel-8 {
+        background-color: rgb(81, 165, 42);
+      }
+      .pastel-9 {
+        background-color: rgb(234, 181, 5);
+      }
+      .pastel-10 {
+        background-color: rgb(150, 75, 75);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>1. Default Flexbox</h2>
+      <div class="flex-container">
+        <div class="square pastel-1">1</div>
+        <div class="square pastel-2">2</div>
+        <div class="square pastel-3">3</div>
+        <div class="square pastel-4">4</div>
+        <div class="square pastel-5">5</div>
+        <div class="square pastel-6">6</div>
+      </div>
+      <h2>2. Flex direction: Column</h2>
+      <div
+        class="flex-container"
+        style="flex-direction: column; flex-wrap: wrap"
+      >
+        <div class="square pastel-1">1</div>
+        <div class="square pastel-2">2</div>
+        <div class="square pastel-3">3</div>
+        <div class="square pastel-4">4</div>
+        <div class="square pastel-5">5</div>
+        <div class="square pastel-6">6</div>
+      </div>
+      <h2>3. justify-content: space-between</h2>
+      <div class="flex-container" style="justify-content: space-between">
+        <div class="square pastel-1">1</div>
+        <div class="square pastel-2">2</div>
+        <div class="square pastel-3">3</div>
+        <div class="square pastel-4">4</div>
+        <div class="square pastel-5">5</div>
+        <div class="square pastel-6">6</div>
+      </div>
+      <h2>4. Align-items: center</h2>
+      <div class="flex-container" style="align-items: center">
+        <div class="square pastel-1">1</div>
+        <div class="square pastel-2">2</div>
+        <div class="square pastel-3">3</div>
+        <div class="square pastel-4">4</div>
+        <div class="square pastel-5">5</div>
+        <div class="square pastel-6">6</div>
+      </div>
+      <h2>5. Flex wrap: wrap</h2>
+      <div class="flex-container" style="flex-wrap: wrap">
+        <div class="square pastel-1">1</div>
+        <div class="square pastel-2">2</div>
+        <div class="square pastel-3">3</div>
+        <div class="square pastel-4">4</div>
+        <div class="square pastel-5">5</div>
+        <div class="square pastel-6">6</div>
+        <div class="square pastel-7">7</div>
+        <div class="square pastel-8">8</div>
+        <div class="square pastel-9">9</div>
+        <div class="square pastel-10">10</div>
+      </div>
+      <h2>6. Align content: space-around(with wrap)</h2>
+      <div
+        class="flex-container"
+        style="flex-wrap: wrap; align-content: space-around"
+      >
+        <div class="square pastel-1">1</div>
+        <div class="square pastel-2">2</div>
+        <div class="square pastel-3">3</div>
+        <div class="square pastel-4">4</div>
+        <div class="square pastel-5">5</div>
+        <div class="square pastel-6">6</div>
+        <div class="square pastel-7">7</div>
+        <div class="square pastel-8">8</div>
+        <div class="square pastel-9">9</div>
+        <div class="square pastel-10">10</div>
+      </div>
+    </div>
+  </body>
+</html>

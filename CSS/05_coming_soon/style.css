@@ -1,0 +1,67 @@
+/* * {
+  outline: 1px solid rgba(55, 55, 206, 0.8);
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", serif;
+  height: 100%;
+}
+.container {
+  background: linear-gradient(135deg, #8a2be2, #4169e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 30px;
+  max-width: 400px;
+  width: 90%;
+}
+.logo {
+  width: 150px;
+  /* height: 100px; */
+  object-fit: contain;
+}
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input[type="email"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+input:hover {
+  border-color: rgba(255, 0, 0, 0.811);
+}
+button {
+  padding: 0.5rem;
+  background-color: #8a2be2;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+}
+svg {
+  /* position: absolute; */
+  /* height: 250px; */
+}
